@@ -93,4 +93,30 @@
   <div class="login-box">
     <img src="images/pepe-logo.png" class="logo" alt="Pepe Coin Logo">
     <h1>🔒 Secure Access</h1>
-    <p>Enter your email an
+    <p>Enter your email and passcode to view your VIP pass</p>
+
+    <input type="email" id="email" placeholder="Enter your email" />
+    <input type="password" id="password" placeholder="Enter passcode" />
+    <a href="#" class="btn" onclick="validateLogin()">🔓 Unlock Pass</a>
+    <p id="error-msg" class="error"></p>
+  </div>
+
+  <script>
+    function validateLogin() {
+      const email = document.getElementById("email").value.trim().toLowerCase();
+      const password = document.getElementById("password").value.trim();
+      const error = document.getElementById("error-msg");
+
+      const allowedEmail = "rdhlai012@gmail.com";
+      const allowedPassword = "Razamol@12";
+
+      if (email === allowedEmail && password === allowedPassword) {
+        window.location.href = "pass.html";
+      } else {
+        error.textContent = "Access Denied: Incorrect email or password.";
+      }
+    }
+  </script>
+
+</body>
+</html>
