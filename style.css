@@ -1,0 +1,61 @@
+body {
+  background: #0e0e0e;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ff9d70;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 26px;
+  color: #00ff9d;
+}
+
+.date {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.invite {
+  background: #2e2e2e;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+ul {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.code {
+  font-size: 18px;
+  color: #ffcc00;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #00ff9d;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 15px;
+}

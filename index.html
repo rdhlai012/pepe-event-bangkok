@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pepe Concert VIP Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .login-box {
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: 100px auto;
+      box-shadow: 0 0 20px #00ff9d70;
+      text-align: center;
+    }
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .btn {
+      width: 100%;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <img src="images/pepe-logo.png" class="logo" alt="Pepe Coin Logo">
+    <h1>🔒 Secure Access</h1>
+    <p>Enter your email and passcode to view your VIP pass</p>
+
+    <input type="email" id="email" placeholder="Enter your email">
+    <input type="password" id="password" placeholder="Enter passcode">
+    <a href="#" class="btn" onclick="validateLogin()">🔓 Unlock Pass</a>
+    <p id="error-msg" class="error"></p>
+  </div>
+
+  <script>
+    function validateLogin() {
+      const email = document.getElementById("email").value.trim().toLowerCase();
+      const password = document.getElementById("password").value.trim();
+      const error = document.getElementById("error-msg");
+
+      const allowedEmail = "rdhlai012@gmail.com";
+      const allowedPassword = "Razamol@12";
+
+      if (email === allowedEmail && password === allowedPassword) {
+        window.location.href = "pass.html";
+      } else {
+        error.textContent = "Access Denied: Incorrect email or password.";
+      }
+    }
+  </script>
+
+</body>
+</html>
